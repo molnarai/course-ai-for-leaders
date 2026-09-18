@@ -138,7 +138,6 @@ transition = "none"
 <li><span class="term">Define</span>: Introduce and explain the concept of Generative AI.</li>
 <li><span class="term">De-mystify</span>: Break down the components of Generative AI to make them understandable.</li>
 <li><span class="term">Deploy</span>: Explore the business applications of Generative AI and how they can be implemented.</li>
-<li><span class="term">De-risk</span>: Discuss the ethical, legal, and risk considerations associated with Generative AI.</li>
 <li><span class="term">Develop</span>: Look into future prospects and innovations in the field of Generative AI.</li>
 </ol>
 
