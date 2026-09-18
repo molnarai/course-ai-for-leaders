@@ -8,6 +8,12 @@ numsession: 2
 ---
 This session covers AI systems that combine Generative AI with other functions. It covers concepts and tools to build Agentic AI Systems.
 
+
+## Presentations
+- [](../../slides/slide-20-rag/)
+- [](../../slides/slide-21-engineering-robust-rag/)
+- [](../../slides/slide-30-agentic-systems/)
+
 ## Agenda
 
 | Time | Activity |
