@@ -23,9 +23,6 @@
     {{- with resources.GetRemote $transcriptURL -}}
       {{- with .Err -}}
         <!-- Transcript not available -->
-         <pre>
-          {{- $transcriptURL -}}
-         </pre>
       {{- else -}}
         {{- $id := delimit (slice "transcript" (md5 $src)) "-" -}}
         <button

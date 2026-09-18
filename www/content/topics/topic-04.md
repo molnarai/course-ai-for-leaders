@@ -1,17 +1,31 @@
 ---
-date: 2026-09-16
-classdates: '2026-09-16'
+date: 2026-10-17
+classdates: 'Saturday, October 17, 2026, 9:00 AM–1:00 PM'
 draft: false
-title: 'Graph Basics & Connectivity'
-theoretical: "Graphs in retail (product co-purchase, user-item graphs); degree, neighborhoods, connected components. Challenges of storing and processing large graphs in distributed environments."
-technical: "Data modeling and ETL design: profiling, cleaning, layered tables (raw/clean/feature). In-class: design schema and implement first Spark ETL that produces cleaned data."
+title: 'Operationalizing Generative AI – Integration and Customization'
 weight: 40
 numsession: 4
 ---
-## Theory
-Define graphs formally (nodes, edges, weighted/unweighted, directed/undirected) with examples from retail: product co-purchase graphs, user item bipartite graphs. Introduce degree, paths, and neighborhoods (ego-nets) as a way to analyze local structure. Cover connected components (weak/strong) and their interpretation in co-purchase or social graphs (e.g., isolated subgraphs vs a giant component). Discuss the computational challenges of processing large graphs: storing adjacency information across partitions, iteratively propagating labels (for components), and the difference between small networkx-style analyses and cluster-scale graph processing. Use small toy graphs for cut/degree/component quizzes.
+This session focuses on integrating generative AI into current enterprise systems and workflows, emphasizing practical steps for embedding AI smoothly within existing structures. It examines the choice between customizing generative AI models for specific business needs and using readily available tools. The session also covers the role of data feedback loops in continuously improving AI performance, highlighting how ongoing data integration refines model accuracy and effectiveness over time.
 
-## Technical
-Technical deep dive into data modeling and ETL design in Spark. Cover practical data profiling and quality checks (missing values, outliers, inconsistent keys) on large tables. Introduce layered data architecture (raw/staging *cleaned* feature tables) and idempotent ETL design. In-class lab: teams explore schemas, identify key tables for their project, and sketch a target data model (tables/views needed for training and evaluation). Begin implementing a first ETL pipeline in Spark that reads raw data and writes a cleaned/normalized version to a curated location.
+## Agenda
 
+| Time | Activity |
+|---|---|
+| 9:00–9:30 AM | Quiz 1 |
+| 9:30–10:30 AM | Lecture |
+| 10:30–11:00 AM | Discussion |
+| 11:00 AM–12:00 PM | Team Activity |
+| 12:00–1:00 PM | Presentation & Conclusion |
 
+## Quiz
+
+- **Quiz 1** (in class, on paper, closed book): Strategic Applications of Generative AI in Business.
+
+## Deliverables
+
+- **Team presentation** (group, PPTX or PDF, in class): Operationalizing Generative AI. Submit via iCollege.
+
+## Upcoming
+
+- **Quiz 2** on this session’s topic takes place at the start of Session 5 (October 31, 9:00–9:30 AM).

@@ -1,0 +1,6 @@
+{{- /* Renders ```mermaid fences as diagrams instead of highlighted code.
+       Sets a page-scoped flag so baseof.html only loads mermaid.js where needed. */ -}}
+<pre class="mermaid">
+  {{- .Inner | htmlEscape | safeHTML -}}
+</pre>
+{{- .Page.Store.Set "hasMermaid" true -}}

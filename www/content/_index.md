@@ -1,29 +1,28 @@
 ---
 title: Homepage
-extended_title: 'EMBA 8160: Scalable Data Analysis'
+extended_title: 'EMBA 8160: Artificial Intelligence for Leaders'
 layout: home
-description: 'The course integrates algorithmic theory, scalable computing systems, and project-based practice for modern data science on large datasets. It covers core algorithms for machine learning, recommender systems, graph mining, frequent pattern mining, and forecasting, while learning how these methods change when deployed on parallel and distributed systems such as Apache Spark. 
-The course combines theoretical discussions with hands-on technical work in Spark, ETL and ELT pipeline design, workflow orchestration, experiment tracking, and scalable model development. Through one of three retail analytics projects, students build and evaluate end-to-end solutions that improve both technical performance and analytical quality over a baseline implementation.'
-jumbotron: "../imgs/emba8160-home-page.png"
-podcasturl: 'https://insight-gsu-edu-msa8700-public-files-us-east-1.s3.us-east-1.amazonaws.com/podcast/Scaling_Retail_Analytics_with_Apache_Spark.m4a'
+description: '<p>The objective of this course is to prepare participants with a solid understanding of Generative AI’s transformative potential and its implications for shaping the future of business and society.
+</p>
+<p>This course offers an immersive introduction to Generative Artificial Intelligence (AI) and its implications for modern businesses. Participants will delve into the historical context and fundamental concepts of (Generative) AI, exploring its evolution and impact on various industries. Through interactive discussions, case studies, and hands-on activities, students will gain a comprehensive understanding of key concepts such as neural networks, generative models, and the practical applications of transfer learning and prompt engineering.
+</p><p>
+Throughout the course, participants will explore the diverse applications of Generative AI, including creative content generation, natural language processing, and healthcare advancements, while analyzing real-world case studies to understand implementation challenges and ethical considerations. Engaging in group activities and discussions, students will refine their problem-solving skills, foster collaboration, and explore strategies for integrating Generative AI into existing business frameworks. Additionally, discussions on ethical practices and responsible AI will underscore the importance of transparency and fairness in AI-driven decision-making processes.
+</p>'
+jumbotron: "../imgs/emba8160-home-page.jpg"
+podcasturl: "https://insight-gsu-edu-msa8700-public-files-us-east-1.s3.us-east-1.amazonaws.com/podcast/leading_the_shift_to_agentic_ai.m4a"
 ---
-
-<!--
-This course integrates algorithmic theory, scalable computing systems, and project-based practice for modern data science on large datasets. Students study core algorithms for machine learning, recommender systems, graph mining, frequent pattern mining, and forecasting, while learning how these methods change when deployed on parallel and distributed systems such as Apache Spark running on a research cluster.
-
-The course combines theoretical discussions with hands-on technical work in Spark, ETL and ELT pipeline design, workflow orchestration, experiment tracking, and scalable model development. Through one of three fixed retail analytics projects, students build and evaluate end-to-end solutions that improve both technical performance and analytical quality over a baseline implementation.
- -->
-
-
 
 ## Documents
 - [Course Syllabus (PDF)](files/syllabus.pdf)
 
-<!-- <a href="files/syllabus.pdf" download class="download-link">
-    <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-        <path d="M12 16l-4-4h3V4h2v8h3l-4 4zm9-13H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14z"/>
-    </svg>
-    Course Syllabus (PDF)
-</a> -->
+## Learning Objectives
 
+Upon successful completion of this course, students will gain “Ready for work” skills, including:
+
+1. Understand the historical context and fundamental concepts of Generative AI.
+2. Build AI systems.
+3. Explore applications of Generative AI across industries, including creative content generation, natural language processing, and healthcare.
+4. Analyze real-world case studies to understand implementation challenges and ethical considerations.
+5. Refine problem-solving skills and foster collaboration through group activities and discussions.
+6. Develop strategies for integrating Generative AI into existing business frameworks responsibly and ethically.
 

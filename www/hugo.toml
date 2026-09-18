@@ -105,3 +105,7 @@ transition = "slide"
   enableSearch = true
   enableTOC = true
   enableBreadcrumbs = true
+
+[caches.getresource]
+  dir = ":cacheDir/:project"
+  maxAge = "1h"

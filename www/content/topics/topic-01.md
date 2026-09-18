@@ -1,16 +1,27 @@
 ---
-date: 2026-08-26
-classdates: '2026-08-26'
+date: 2026-09-18
+classdates: 'Friday, September 18, 2026, 5:00–9:30 PM'
 draft: false
-title: 'Course Overview & Scale'
-theoretical: "Course goals; three project tracks (recommender, graph segmentation, forecasting). Small vs large-scale data science: memory limits, communication cost, approximate vs exact methods."
-technical: "Intro to ARC, Spark, storage, and Slurm. Overview of datasets and fixed project options. In-class: explore briefs and data, discuss interests and team formation."
+title: 'Intro Generative AI'
 weight: 10
 numsession: 1
 ---
-## Theory
-Introduce the three problem domains: retail recommender systems, graph-based segmentation, and demand forecasting. Discuss how these tasks look on 'small data' (single-machine notebooks) versus 'large-scale' settings with millions of users, items, or time series. Define basic ML concepts (features, targets, train/validation/test splits, empirical risk) and highlight what changes when data no longer fits in memory (data locality, communication cost, approximate vs exact algorithms).
+This session introduces  Artificial Intelligence, covering its background, historical context, and the fundamentals of AI development. It also provides an overview of prompt engineering techniques for generating text and images, setting the foundation for understanding AI’s capabilities and applications.
 
-## Technical
-Introduce course logistics, ARC cluster, Spark, CubeFS, and Slurm at a high level. Present the three fixed project options and corresponding datasets. Walk through schemas and business context. In-class activity: students browse project briefs and datasets, sketch initial ideas for which track they might choose. If desired, collect a low-stakes background survey and project preferences.
+{{<figure src="imgs/Evolution_of_AI.png" 
+    alt="The figure Evolution of AI shows the history of Artificial Intellligence" >}}
 
+## Listen
+
+{{< podcast src="https://insight-gsu-edu-msa8700-public-files-us-east-1.s3.us-east-1.amazonaws.com/podcast/introduction_to_generative_ai.m4a" title="Introduction to Generative AI" >}}
+
+
+
+## Agenda
+
+| Time | Activity |
+|---|---|
+| 5:00–7:00 PM | Lecture |
+| 7:00–7:30 PM | Dinner |
+| 7:30–9:00 PM | Lecture & Activity |
+| 9:00–9:30 PM | Reflection |
