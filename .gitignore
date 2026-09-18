@@ -213,3 +213,10 @@ celerybeat.pid
 
 .DS_Store
 .hugo_build.lock
+
+# reveal.js ships its build output in dist/, so the generic `dist` rule above
+# excluded the theme's reveal.css/reset.css/reveal.js from the repo. The local
+# working copy still had them, but CI checkouts did not, so the deployed slides
+# 404'd on /reveal-js/dist/*. Keep these tracked.
+!www/themes/reveal-hugo/static/reveal-js/dist/
+!www/themes/reveal-hugo/assets/reveal-js/dist/

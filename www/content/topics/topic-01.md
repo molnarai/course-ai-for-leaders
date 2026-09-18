@@ -15,7 +15,9 @@ This session introduces  Artificial Intelligence, covering its background, histo
 
 {{< podcast src="https://insight-gsu-edu-msa8700-public-files-us-east-1.s3.us-east-1.amazonaws.com/podcast/introduction_to_generative_ai.m4a" title="Introduction to Generative AI" >}}
 
+## Presentation
 
+- [Introduction to Generative AI](../../slides/slide-10-intro-ai/)
 
 ## Agenda
 
