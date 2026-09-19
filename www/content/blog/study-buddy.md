@@ -20,6 +20,9 @@ The shared framework for EMBA 8160 (Fall 2026). Each student designs their own A
 
 > **The site are reachable on campus or over the VPN only!**
 
+
+> **Documentation at [n8n Documentation](../n8n-documentation/)**
+
 | Site | URL |
 |------|-----|
 | Study-Buddy | https://apps.insight.gsu.edu/emba8160fall2026/study-buddy/ |
