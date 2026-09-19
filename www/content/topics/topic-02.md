@@ -10,9 +10,9 @@ This session covers AI systems that combine Generative AI with other functions. 
 
 
 ## Presentations
-- [](../../slides/slide-20-rag/)
-- [](../../slides/slide-21-engineering-robust-rag/)
-- [](../../slides/slide-30-agentic-systems/)
+- [Retreiveal Augmented Generation](../../slides/slide-20-rag/)
+- [Engineering Robust RAG Systems](../../slides/slide-21-engineering-robust-rag/)
+- [Agentic AI Systems](../../slides/slide-30-agentic-systems/)
 
 ## Agenda
 

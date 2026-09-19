@@ -593,5 +593,3 @@ The blueprint illustrations in this deck were generated with <strong>NotebookLM<
 - Say the last card out loud rather than skipping it. A deck about grounded generation, illustrated by generated summaries of two papers, is the lesson in miniature: the synthesis is useful, legible and fast — and it is not the source.
 - Both papers are short and readable; point anyone who wants to go further at Barnett first, since the failure catalogue is immediately usable.
 {{% /note %}}
-
-***

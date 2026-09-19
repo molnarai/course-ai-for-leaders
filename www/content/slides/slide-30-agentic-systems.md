@@ -936,5 +936,3 @@ Several diagrams in this deck were generated with <strong>NotebookLM</strong>; t
 - Worth saying the last card out loud. In a session about delegating action to machines, being explicit about which claims are verified and which are marketing is part of the lesson.
 - If anyone wants to go deeper: Russell and Norvig for the foundations, and the Self-RAG paper for a concrete, readable example of reflection applied to retrieval.
 {{% /note %}}
-
-***

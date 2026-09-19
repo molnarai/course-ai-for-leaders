@@ -222,5 +222,3 @@ What governance structures, consent mechanisms, and technical safeguards would y
 You have been hired as the AI Ethics Lead at a startup deploying a multi-agent system to autonomously manage a portfolio of real estate investments — identifying properties, negotiating purchase terms, managing tenants, and initiating legal proceedings when necessary.
 
 Using any frameworks discussed today, identify the three most significant ethical risks and design one concrete mitigation for each. Would you take this job?
-
-***

@@ -51,6 +51,20 @@ transition = "none"
 .reveal .slides section[class*="fs"] h1 { font-size: 56px; margin-bottom: 0.45em; }
 
 .reveal .cols2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2em; align-items: start; }
+/* Four equal boxes. grid-auto-rows: 1fr makes both rows the same height and
+   the default stretch alignment makes each card fill its cell, so all four end
+   up identical regardless of how much text they hold. */
+.reveal .grid2x2 { display: grid; grid-template-columns: 1fr 1fr;
+                   grid-template-rows: 1fr auto 1fr; gap: 0.55em 1.6em; }
+.reveal .grid2x2 > .card { margin: 0; height: 100%; padding: 0.45em 0.8em; }
+.reveal .grid2x2 > .card p { margin: 0.4em 0 0 0; }
+/* Divider between the "like humans" row and the "rationally" row. It spans
+   both columns, and the auto-sized middle row keeps the two card rows equal.
+   A horizontal-rule element cannot be used here — reveal-hugo splits slides on
+   one, exactly as it does on the deck's *** markers. Note that even writing the
+   tag name in a comment triggers it, which is why it is spelled out. */
+.reveal .grid2x2 > .rowline { grid-column: 1 / -1; height: 0; margin: 0;
+                              border-top: 1px solid #b9c4d4; }
 .reveal .cols3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 1.5em; align-items: start; }
 .reveal .cols4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.8em 1.2em; align-items: start; }
 
@@ -101,30 +115,46 @@ transition = "none"
 .reveal .tok .up,
 .reveal .tok .plus  { text-align: center; font-size: 10px; line-height: 1; color: #444; }
 
+/* Title slide — live type over the branded background. The text block is
+   left-aligned and width-limited so it clears the motif in the lower right. */
+.reveal .slides section.title { text-align: left; }
+.reveal .slides section.title .titlebox { max-width: 82%; }
+.reveal .slides section.title h1 { color: #fff; font-size: 1.75em; line-height: 1.08;
+                                   margin: 0 0 0.35em 0; text-shadow: 0 2px 12px rgba(0,0,0,0.35); }
+.reveal .slides section.title .tagline { color: #9FC5E8; font-size: 0.62em; font-weight: 700;
+                                   letter-spacing: 0.04em; margin: 0 0 2.2em 0; }
+.reveal .slides section.title .byline { color: #EDEEEF; font-size: 0.6em; font-weight: 700;
+                                   margin: 0 0 0.45em 0; }
+.reveal .slides section.title .when { color: #b9cde6; font-size: 0.52em; margin: 0; }
+
 /* The theme's footer branding and slide number are dark, drawn for white
-   slides. Reverse them to white while a dark divider is on screen. */
-.reveal:has(.slides section.section.present) .slide-footer img { filter: brightness(0) invert(1); }
-.reveal:has(.slides section.section.present) .slide-number { color: #EDEEEF; }
+   slides. Reverse them to white while a dark divider or the title is on screen. */
+.reveal:has(.slides section.section.present) .slide-footer img,
+.reveal:has(.slides section.title.present) .slide-footer img { filter: brightness(0) invert(1); }
+.reveal:has(.slides section.section.present) .slide-number,
+.reveal:has(.slides section.title.present) .slide-number { color: #EDEEEF; }
 </style>
 
-<!-- 000 — Title: Introduction to Generative AI -->
-{{< slide content-image="/imgs/intro-ai-hugo-slide-images/intro-ai-000.png" >}}
-<h1></h1>
+<!-- 000 — Title -->
+<!-- Background is intro-ai-000.png with the baked-in title, e-mail and date
+     cloned out, so that type is live and editable for the next cohort. -->
+{{< slide background-image="/imgs/intro-ai-hugo-slide-images/intro-ai-000-bg.png" class="title" >}}
+
+<div class="titlebox">
+
+# Introduction to Generative AI
+
+<p class="tagline">Define &nbsp;&middot;&nbsp; De-mystify &nbsp;&middot;&nbsp; Deploy &nbsp;&middot;&nbsp; Develop</p>
+
+<!-- <p class="byline">Péter Molnár &nbsp;&middot;&nbsp; pmolnar@gsu.edu</p> -->
+
+<p class="when">EMBA 8160 &mdash; AI for Leaders &nbsp;&middot;&nbsp; Session 1</p>
+
+</div>
 
 {{% note %}}
 - Welcome. One session, five parts: Define, De-mystify, Deploy, De-risk, Develop.
 - Goal is not to make you engineers — it is to make you able to ask the right questions of the people building this.
-{{% /note %}}
-
-***
-
-<!-- 001 — About the instructor -->
-{{< slide content-image="/imgs/intro-ai-hugo-slide-images/intro-ai-001.png" >}}
-<h1></h1>
-
-{{% note %}}
-- Teaching AI at Robinson, both the technical build and the executive decision side.
-- Industry background as a data scientist at AWS — the examples come from real deployments.
 {{% /note %}}
 
 ***
@@ -274,12 +304,11 @@ Part one: vocabulary. Most disagreements about AI strategy are really disagreeme
 ***
 
 <!-- 012 — Four approaches: think/act, humanly/rationally -->
-{{< slide class="fs60" >}}
+{{< slide class="fs52" >}}
 
 # Four Ways to Define AI
 
-<div class="cols2">
-<div>
+<div class="grid2x2">
 <div class="card">
 <span class="hd">Think like humans</span>
 Aim <strong>to replicate the cognitive processes of humans</strong>, including reasoning, learning, understanding, and problem-solving.
@@ -290,8 +319,6 @@ Aim <strong>to replicate the cognitive processes of humans</strong>, including r
 Designed to <strong>mimic</strong> human behavior and actions through interactions that <strong>feel natural</strong>.
 <p>Alan Turing suggests we should ask if the machine can win a game, called the "Imitation Game".</p>
 </div>
-</div>
-<div>
 <div class="card">
 <span class="hd">Think rationally</span>
 <strong>Formalize "correct" reasoning using a mathematical model</strong> (e.g. of deductive reasoning).
@@ -302,7 +329,6 @@ Designed to <strong>mimic</strong> human behavior and actions through interactio
 <span class="hd">Act rationally</span>
 Agent <strong>that perceives its environment</strong> and can execute <strong>actions to change it</strong>. Agents have inherent goals that they want to achieve (e.g. survive, reproduce).
 <p>Though, true maximization of goals requires omniscience and unlimited computational abilities. Limited rationality involves <strong>maximizing goals</strong> within the computational and other <strong>resources available</strong>.</p>
-</div>
 </div>
 </div>
 

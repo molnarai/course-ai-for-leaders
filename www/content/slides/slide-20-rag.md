@@ -755,5 +755,3 @@ Sasi Kumar, &ldquo;Cosine Similarity vs Euclidean Distance,&rdquo; <em>Medium</e
 {{% note %}}
 - Worth naming the two books out loud: *Hands-On Large Language Models* is the practical reference if anyone wants to go deeper on the retrieval half, and Kelleher et al. is the standard textbook treatment of the similarity and nearest-neighbor material in section three.
 {{% /note %}}
-
-***
