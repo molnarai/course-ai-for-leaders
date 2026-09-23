@@ -69,15 +69,18 @@ Your final project must include multiple working workflows or agents. At minimum
 5. **At least one advanced workflow** beyond the starter examples, such as synthesis generation, challenge-mode branching, class-prep coaching, scenario generation, weakness tracking, or evidence-based feedback.
 
 ### Technical Expectations
-Your implementation should make meaningful use of the platform resources provided in n8n. You do not need to use every resource equally, but your design should be technically coherent.
+You will not build these workflows from scratch. We will provide **working n8n templates** for the core workflows. Each template runs out of the box with default behavior.
 
-Expected technical elements:
-- LLM prompting and orchestration.
-- Structured workflow design in n8n.
-- Course-material processing and retrieval.
-- Some form of persistence across conversations.
-- Multiple workflows with clear roles.
-- Evidence of testing and iterative improvement.
+Your job is to make them your own:
+- **Required: customize behavior through system prompts.** Rewrite the system prompts to define your Study Buddy's role, coaching style, tone, and how it uses course materials and memory. This is where most of your design work will show.
+- **Optional: change the workflow structure.** If you are comfortable, you can also add, remove, or rewire nodes. For example, you might add a branching step, a new tool, or an extra workflow. This is not required, but it is a way to go further.
+
+Your final project should show:
+- Clear, deliberate system prompts for each workflow you use.
+- Course materials loaded and retrieved in a way that supports your design.
+- Memory that carries over between conversations.
+- Each workflow playing a clear role in the overall system.
+- Evidence that you tested your Study Buddy and improved it based on what you saw.
 
 ---
 
