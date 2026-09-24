@@ -61,6 +61,9 @@ Against the [capability checklist](../#capability-checklist), you should be at: 
 - Open your project on GitLab https://git.insight.gsu.edu (VPN connection required)
 - Navigate to the folder `documentation/Milestone_1`
 - Upload your Markdown, PDF, or DOCX to the folder. Only one file for all three.
+
+> See [Instructions to upload documents to GitLab](../../blog/upload-docs-to-gitlab/)
+
 ---
 
 ## Writing Functional and Non-Functional Requirements

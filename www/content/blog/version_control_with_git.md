@@ -1,4 +1,3 @@
-
 ---
 draft: false
 title: Version Control with GIT
