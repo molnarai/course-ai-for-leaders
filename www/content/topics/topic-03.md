@@ -9,7 +9,7 @@ numsession: 3
 This session explores strategic uses of generative AI in business, focusing on high-impact opportunities across industries in areas like marketing, customer service, and product development. It includes case studies of successful AI-driven transformations in sectors such as healthcare, finance, and retail, highlighting real-world applications and value. The session also presents frameworks to help businesses decide whether to build or buy generative AI solutions, giving participants criteria to evaluate the best approach for their needs.
 
 ## Presentations
-- [Agentic AI Business Solutions](../../slides/slide-35-business-solutions/)
+- [Agentic AI Business Solutions](../../slides/slide-35-business-solutions/slide-35-business-solutions/)
 
 ## Agenda
 
