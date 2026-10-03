@@ -731,7 +731,7 @@ You are sponsoring a RAG assistant over HR policies, benefits documents, and the
 
 {{% note %}}
 - If one sentence survives the session: **the model is not the system.**
-- The work that determines success — curation, permissions, chunking, evaluation — is organisational work with a technical surface. It is exactly the kind of work that has no owner unless a leader assigns one.
+- The work that determines success — curation, permissions, chunking, evaluation — is organizational work with a technical surface. It is exactly the kind of work that has no owner unless a leader assigns one.
 {{% /note %}}
 
 ***

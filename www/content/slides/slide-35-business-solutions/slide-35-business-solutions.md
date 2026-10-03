@@ -504,7 +504,7 @@ Part one: the minimum vocabulary needed to read a vendor pitch or an internal pr
 {{% note %}}
 - This is the whole interface between a model and a tool: a name, a description, and the parameters it takes. Every major model provider uses this same shape.
 - The model has never seen your refund system. It learns the tool exists from this definition, which is sent along with every request.
-- The description is the interesting part for this room. It is written in plain English, it decides when the model reaches for the tool, and in most organisations it is written by a developer and reviewed by nobody. Treat it as a policy document.
+- The description is the interesting part for this room. It is written in plain English, it decides when the model reaches for the tool, and in most organizations it is written by a developer and reviewed by nobody. Treat it as a policy document.
 - And then the caveat, the same one as the refund trace: instructions in a description shape behaviour; they do not enforce it. The ceiling and the 30-day window belong in the code that runs the tool.
 {{% /note %}}
 
@@ -801,7 +801,7 @@ Part two: the frame. Five slides, then we use it six times.
 
 {{% note %}}
 - Be explicit about the selection. A list of six in a slide deck reads like a league table, and this is not one.
-- The survey finding is about where organisations *report* scaling. Self-reported adoption is a signal of where attention and budget are going; it is not evidence of return.
+- The survey finding is about where organizations *report* scaling. Self-reported adoption is a signal of where attention and budget are going; it is not evidence of return.
 {{% /note %}}
 
 ***
@@ -818,7 +818,7 @@ Part two: the frame. Five slides, then we use it six times.
 </div>
 <div>
 <p class="sub">Acts</p>
-<div class="card warn"><span class="hd">Plans and executes multistep work</span>Uses tools and organisational data to issue the refund, run the runbook step, or raise the purchase order.</div>
+<div class="card warn"><span class="hd">Plans and executes multistep work</span>Uses tools and organizational data to issue the refund, run the runbook step, or raise the purchase order.</div>
 <p>The human supervises, approves, or handles exceptions.</p>
 </div>
 </div>
@@ -826,7 +826,7 @@ Part two: the frame. Five slides, then we use it six times.
 <p class="refs">A test for any pitch: name the tool the system calls that changes something outside the conversation. If there is none, it is a chatbot.</p>
 
 {{% note %}}
-- The definition from the first half, restated for a buyer: an agentic solution plans and executes multistep work using tools and organisational data, rather than merely answering a prompt.
+- The definition from the first half, restated for a buyer: an agentic solution plans and executes multistep work using tools and organizational data, rather than merely answering a prompt.
 - The test in the footer is the practical one. Much of what is sold as agentic today is the left-hand column with a new label.
 {{% /note %}}
 
@@ -887,7 +887,7 @@ Part two: the frame. Five slides, then we use it six times.
 <table class="plain">
 <tr><th>Code</th><th>Evidence type</th><th>What it shows</th><th>What it does not show</th></tr>
 <tr><td class="lv">P</td><td>Product documentation, announcement or advertisement</td><td>The vendor says the product can do this</td><td>That anyone has deployed it, or that it works at scale</td></tr>
-<tr><td class="lv">C</td><td>Vendor-published customer story</td><td>A named organisation uses the product</td><td>Independently verified results; what did not work</td></tr>
+<tr><td class="lv">C</td><td>Vendor-published customer story</td><td>A named organization uses the product</td><td>Independently verified results; what did not work</td></tr>
 <tr><td class="lv">A</td><td>An AI-assistance story plus separate agent documentation</td><td>The industry uses assistive AI, and an agent product exists</td><td>That the named customer runs the autonomous agent</td></tr>
 <tr><td class="lv">I</td><td>Research with a stated method: experiment, benchmark, or tribunal record</td><td>A measured effect, or a documented failure</td><td>That it transfers to your firm; most measure assistance, not autonomy</td></tr>
 </table>
@@ -1344,7 +1344,7 @@ Part four: the agent now writes to internal systems and, in procurement, commits
 
 {{% note %}}
 - Attribution is the hard part here. Inventory turns improve for many reasons, and an agent launched during a calm quarter will look brilliant.
-- The footer is the most practical line on the slide. Organisations getting value from operational agents are generally the ones that already had clean data and clear rules.
+- The footer is the most practical line on the slide. Organizations getting value from operational agents are generally the ones that already had clean data and clear rules.
 {{% /note %}}
 
 ***
@@ -1828,7 +1828,7 @@ Five questions. Small groups, then report back.
 ### Group Activity
 # Propose an agentic solution
 
-<div class="card"><span class="hd">1 &middot; The job</span>Identify a concrete business problem that an agentic solution could solve. Draw on your own work if you can, but leave out anything confidential or proprietary; alternatively, choose a fictional organisation facing a significant problem. Describe the workflow the solution would replace.</div>
+<div class="card"><span class="hd">1 &middot; The job</span>Identify a concrete business problem that an agentic solution could solve. Draw on your own work if you can, but leave out anything confidential or proprietary; alternatively, choose a fictional organization facing a significant problem. Describe the workflow the solution would replace.</div>
 <div class="card"><span class="hd">2 &middot; The team</span>Design the agents and their tools. For each agent, describe its role and the tools it uses.</div>
 <div class="card"><span class="hd">3 &middot; The case for it</span>
 <div class="cols4 sub4">

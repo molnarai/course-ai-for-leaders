@@ -227,7 +227,7 @@ Part two: the Zhao framework. This is the organising idea of the whole session.
 <h1></h1>
 
 {{% note %}}
-- **Level 4 — hidden rationales.** No one wrote the rule down. It has to be inferred from patterns in what the organisation did before. Debugging a server crash from past incident logs; pricing a deal the way this firm prices deals.
+- **Level 4 — hidden rationales.** No one wrote the rule down. It has to be inferred from patterns in what the organization did before. Debugging a server crash from past incident logs; pricing a deal the way this firm prices deals.
 - The key line is the last one in the definition: **logical congruence matters more than semantic similarity**. The most useful past case is not the one that reads most like the current one — it is the one that had the same underlying structure. Similarity search actively misleads here.
 - Three approaches: **offline learning** (mine the corpus for principles in advance), **in-context learning** (retrieve past *examples* rather than documents), and **fine-tuning**, when the reasoning style is too complex to fit in a prompt.
 - This is the level where &ldquo;we have twenty years of institutional knowledge in this drive&rdquo; meets reality. The knowledge is in there, but not in a form retrieval can reach. Expect a data-labelling project, not a search project.
@@ -368,7 +368,7 @@ Part four: the two decisions that a sponsor will be asked to approve without bei
 <h1></h1>
 
 {{% note %}}
-- Three ways to get organisational knowledge into a model: put it in the **context** (RAG), train a **small proxy model** to guide retrieval, or **fine-tune** the base model so the knowledge lives in the weights.
+- Three ways to get organizational knowledge into a model: put it in the **context** (RAG), train a **small proxy model** to guide retrieval, or **fine-tune** the base model so the knowledge lives in the weights.
 - Each maps to a level: context for L1 and L2 facts; a small proxy where a specific task needs to be fast and cheap; fine-tuning for L4, where the reasoning pattern itself is the thing to learn.
 - The middle path is the one most people have never heard of and is worth flagging: a small trained model that guides retrieval can cut latency and cost substantially without touching the large model.
 - The strategic note in orange is the single most actionable line in this deck: **do not fine-tune for explicit facts.** It is expensive, it goes stale, it cannot cite, and it hallucinates around the edges. Facts belong in the index.

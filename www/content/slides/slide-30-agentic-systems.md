@@ -249,7 +249,7 @@ Part two: the mechanical heart of the session, and the bridge from the last two 
 {{% note %}}
 - The **act** quadrant, and the slide where the risk conversation really begins. Connectors that let the agent &ldquo;affect the world, not just speak about it.&rdquo;
 - Look at the tool list in the code box: `search_docs`, `update_record`, `issue_refund`. Three lines, and the third one moves money.
-- The technical framing is a list of functions. The business framing is a **list of permissions granted to a non-deterministic system**. Those are the same list, and only one of them gets reviewed in most organisations.
+- The technical framing is a list of functions. The business framing is a **list of permissions granted to a non-deterministic system**. Those are the same list, and only one of them gets reviewed in most organizations.
 - Practical guidance: every tool an agent holds should have its own authorisation, its own rate limit, and its own audit log. &ldquo;The agent has API access&rdquo; is not an acceptable answer to a control question.
 {{% /note %}}
 
@@ -329,7 +329,7 @@ Part three: from architecture to a concrete transaction.
 - One sentence from a customer: &ldquo;I need a refund for my last order.&rdquo; Four things have to happen: verify identity, retrieve purchase history, check the business rule, execute the refund.
 - The line at the bottom is the whole session compressed: **a standard chatbot can explain the policy; an agent applies it.**
 - Notice the business rule is a threshold — under $\$100$. Someone chose that number. That choice is the actual autonomy decision, and it is usually made in a configuration file by whoever is building the system.
-- Ask: who in your organisation signs off on that threshold today for a human agent? Whoever it is, they should sign off on this one.
+- Ask: who in your organization signs off on that threshold today for a human agent? Whoever it is, they should sign off on this one.
 {{% /note %}}
 
 ***
@@ -418,7 +418,7 @@ Part four: a distinction vendors blur, and one you should be able to hold firmly
 
 {{% note %}}
 - Four higher-order principles. **Governed autonomy** is first, and deliberately so: independent operation *within strict guardrails*, with human approval checkpoints for critical actions.
-- **System-level orchestration** is the organisational claim — coordination across functions, breaking silos between production, logistics and sales. Note what that implies: the agent inherits every data-sharing and access question those silos were partly there to manage.
+- **System-level orchestration** is the organizational claim — coordination across functions, breaking silos between production, logistics and sales. Note what that implies: the agent inherits every data-sharing and access question those silos were partly there to manage.
 - **Proactive goal formulation** — &ldquo;from reactive executor to proactive partner&rdquo; — is the frontier claim. Treat it as a direction of travel, not a current capability.
 - The leadership read: principles one and two are buildable today and are mostly governance work. Principles three and four are where the research is.
 {{% /note %}}
@@ -444,7 +444,7 @@ Part five: what happens when one agent is not enough — and when it is.
 
 {{% note %}}
 - On the left, one agent with everything pointed at it — inputs, data, tasks, and a lot of question marks. On the right, three agents with roles.
-- **The shift: from decomposing steps to decomposing roles.** That is an organisational design idea, not a technical one, and it is why this material feels familiar to anyone who has structured a team.
+- **The shift: from decomposing steps to decomposing roles.** That is an organizational design idea, not a technical one, and it is why this material feels familiar to anyone who has structured a team.
 - Two justifications given: **specialisation** (each agent optimised for a sub-domain, with its own instructions and tools) and **complexity management** (preventing context window overflow).
 - The second is the more honest engineering reason. A single agent holding an entire complex task runs out of room and starts losing the thread — the &ldquo;lost in the middle&rdquo; problem from the last session, now applied to a plan rather than a document.
 {{% /note %}}
@@ -459,7 +459,7 @@ Part five: what happens when one agent is not enough — and when it is.
 - Two structural pieces: the **orchestrator** — the manager that controls flow, routes outputs, and decides when the goal is met — and the **shared state or blackboard**, the common workspace all agents read from and write to.
 - The blackboard is an old idea from classical AI and it is the right one. It means agents do not need to talk to each other directly; they publish to a shared board.
 - Two questions to ask about any multi-agent design: **who decides the goal is met**, and **what happens when two agents write contradictory things to the blackboard?** Teams often have no answer to the second.
-- Organisational analogy, and a warning with it: a manager, a shared document, and three specialists. Multi-agent systems inherit the failure modes of human teams too — deadlock, duplicated work, and diffusion of responsibility.
+- Organizational analogy, and a warning with it: a manager, a shared document, and three specialists. Multi-agent systems inherit the failure modes of human teams too — deadlock, duplicated work, and diffusion of responsibility.
 {{% /note %}}
 
 ***
@@ -625,8 +625,8 @@ Part six: the four patterns in detail. These are the vocabulary your engineers a
 <h1></h1>
 
 {{% note %}}
-- **Multi-agent**, with the three organisational shapes named explicitly on the right: **collaborative** (peers sharing progress), **supervised** (a supervisor coordinating and verifying), and **hierarchical** (decisions cascading through levels).
-- These are the three shapes human organisations use, for the same reasons. The supervised pattern is the one most enterprises should start with, because it creates a single place where quality is verified and a single answer to &ldquo;who is accountable.&rdquo;
+- **Multi-agent**, with the three organizational shapes named explicitly on the right: **collaborative** (peers sharing progress), **supervised** (a supervisor coordinating and verifying), and **hierarchical** (decisions cascading through levels).
+- These are the three shapes human organizations use, for the same reasons. The supervised pattern is the one most enterprises should start with, because it creates a single place where quality is verified and a single answer to &ldquo;who is accountable.&rdquo;
 - The analogy to project management is in the source text, and it is fair. Just note that it inherits the failure modes too: unclear ownership, handoff loss, and meetings that produce nothing.
 {{% /note %}}
 
@@ -663,8 +663,8 @@ Part seven: the reference architectures and the tooling landscape.
 
 {{% note %}}
 - The classical taxonomy, from the Russell and Norvig textbook, and it is genuinely clarifying: **simple reflex** (condition-action rules), **model-based reflex** (keeps an internal model of a partially observable world), **goal-based** (searches and plans toward a goal), **utility-based** (optimises a utility function under uncertainty), and **learning** agents (a critic and a learning element that improve performance over time).
-- Most LLM agents shipping today are goal-based. Utility-based agents are rarer and more consequential, because a utility function is an explicit statement of what the organisation values — and anything not in it gets traded away.
-- That is the slide's real lesson for leaders: if you let a system optimise, you have to be able to write down what &ldquo;better&rdquo; means. Most organisations discover they cannot.
+- Most LLM agents shipping today are goal-based. Utility-based agents are rarer and more consequential, because a utility function is an explicit statement of what the organization values — and anything not in it gets traded away.
+- That is the slide's real lesson for leaders: if you let a system optimise, you have to be able to write down what &ldquo;better&rdquo; means. Most organizations discover they cannot.
 - Note also that &ldquo;learning agent&rdquo; means the system changes after deployment. Anything that changes itself needs monitoring, not just testing.
 {{% /note %}}
 
@@ -759,7 +759,7 @@ Part eight: the industry picture, read with appropriate scepticism.
 {{% note %}}
 - Capital-intensive industries: agents across oilfields interacting with digital twins, a multi-agent framework for industrial processes at BMW, natural-language queries over IoT sensor data with failure prediction, and autonomous finance reconciling statements and running compliance checks.
 - The pattern across all four: the agent sits on top of systems that *already* had good structured data and clear rules. That is not a coincidence, and it is the most useful thing on the slide.
-- Say it plainly: the organisations getting value from agents are the ones that did their data and process work first. If your master data is a mess, an agent will make expensive decisions from it faster.
+- Say it plainly: the organizations getting value from agents are the ones that did their data and process work first. If your master data is a mess, an agent will make expensive decisions from it faster.
 - The finance row is the one closest to most of this room — reconciliation and compliance checking, high-volume rule-following work with a clear right answer.
 {{% /note %}}
 
@@ -772,7 +772,7 @@ Part eight: the industry picture, read with appropriate scepticism.
 {{% note %}}
 - The progression: traditional AI reacting to inputs, AI agents with perception-action loops, agentic AI as proactive self-improving systems. And the transformation: from automating single tasks to managing operations.
 - The three challenges listed are the right three, and they are governance problems rather than model problems: **interpretability**, **safety**, and **accountability** — &ldquo;establishing responsibility frameworks.&rdquo;
-- That last one is where this room comes in. There is no technical solution to the question of who is responsible when an autonomous system acts. It is an organisational decision that has to be made before deployment, not after an incident.
+- That last one is where this room comes in. There is no technical solution to the question of who is responsible when an autonomous system acts. It is an organizational decision that has to be made before deployment, not after an incident.
 - &ldquo;Integration with legacy enterprise infrastructure&rdquo; under strategic outlook is the unglamorous truth: most of the work ahead is plumbing into systems built decades ago.
 {{% /note %}}
 
@@ -818,7 +818,7 @@ Five questions. Small groups, then report back.
 ### Discussion Question 1
 # Setting the Dial
 
-Your service organisation wants an agent that can issue refunds, update shipping addresses, apply account credits, and cancel subscriptions.
+Your service organization wants an agent that can issue refunds, update shipping addresses, apply account credits, and cancel subscriptions.
 
 <p class="q">Assign an autonomy level to each of those four actions and justify the differences. Which one would you refuse to automate at all, and what would change your mind?</p>
 
