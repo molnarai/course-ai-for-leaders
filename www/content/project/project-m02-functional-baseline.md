@@ -32,7 +32,7 @@ The single most important thing to demonstrate is that at least one learning beh
 A usable but limited prototype.
 
 ## How This Review Is Evaluated
-Working baseline, document handling, retrieval/memory foundation, initial prompt quality, and your first demo. This review contributes **20%** of your project grade.
+Working baseline, document handling, retrieval/memory foundation, initial prompt quality, and your first demo. 
 
 Against the [capability checklist](../#capability-checklist), you should be at: architecture *refined*; chat workflow and materials ingestion *working*; retrieval or memory at a *baseline*; **at least 2 workflows**; at least one strong learning behavior; an evaluation baseline; an early demo; and initial revisions in response to M01 feedback.
 
@@ -42,4 +42,4 @@ Against the [capability checklist](../#capability-checklist), you should be at: 
 - Ingesting documents without metadata, which makes targeted retrieval impossible later.
 
 ## Submission Guidelines
-(The details for submitting this milestone have not been posted, yet. Please check back.)
+Use the "Submit for review" button on the N8N panel to create a snapshot of your workflows for review.

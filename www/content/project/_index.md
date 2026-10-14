@@ -254,7 +254,7 @@ You must submit:
 
 The project runs across four reviews. Each review contributes to your project grade, so early progress and responsiveness to feedback matter, while the final system still carries the most weight.
 
-Each milestone page below states what to deliver, what to show at the review, and the criteria that review is graded on. Due dates and grade weights are in the milestone table at the bottom of this page.
+Each milestone page below states what to deliver, what to show at the review, and the criteria that review is graded on. Target dates and grade weights are in the milestone table at the bottom of this page.
 
 ### Capability Checklist
 Use this table to judge whether you are on track at each review.

@@ -14,10 +14,10 @@
     <!-- <hr> -->
     <h2>Milestones</h2>
     <table class="table">
-        <caption>Table with Project Milestones and Due Dates</caption>
+        <caption>Table with Project Milestones and Target Dates</caption>
         <thead>
             <tr>
-                <th scope="col">Title</th><th scope="col">Description</th><th scope="col">Due Date</th><th scope="col">Grade</th>
+                <th scope="col">Title</th><th scope="col">Description</th><th scope="col">Target Date</th>
             </tr>
         </thead>
         <tbody>
@@ -26,7 +26,6 @@
                     <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
                     <td>{{ .Params.description }}</td>
                     <td>{{ .Params.submission }}</td>
-                    <td>{{ .Params.percent }}%</td>
                 </tr>
             {{ end }}
         </tbody>
@@ -38,7 +37,7 @@
     <article class="assignment-item">
         <h2 class="listing-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
         {{ if .Params.due_date }}
-            <div class="due-date" style="font-weight: bold;">Due: {{ .Params.due_date | time.Format "January 2, 2006" }}</div>
+            <div class="due-date" style="font-weight: bold;">Target Date: {{ .Params.due_date | time.Format "January 2, 2006" }}</div>
         {{ end }}
         
         {{ with .Content }}

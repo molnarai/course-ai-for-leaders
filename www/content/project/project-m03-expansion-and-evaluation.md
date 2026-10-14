@@ -41,4 +41,4 @@ Against the [capability checklist](../#capability-checklist), you should be at: 
 Resist adding workflows for their own sake. Three or four workflows that reliably produce strong learning behavior score better than seven that half-work. If something is fragile, fix it rather than building alongside it.
 
 ## Submission Guidelines
-(The details for submitting this milestone have not been posted, yet. Please check back.)
+Use the "Submit for review" button on the N8N panel to create a snapshot of your workflows for review.
