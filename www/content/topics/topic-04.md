@@ -22,6 +22,9 @@ This session focuses on integrating generative AI into current enterprise system
 
 - **Quiz 1** (in class, on paper, closed book): Strategic Applications of Generative AI in Business.
 
+## Presentation
+- [Operationalizing Generative AI](../../slides/slide-37-operations/slide-37-operationalization/)
+
 ## Deliverables
 
 - **Team presentation** (group, PPTX or PDF, in class): Operationalizing Generative AI. Submit via iCollege.

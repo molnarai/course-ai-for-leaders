@@ -220,3 +220,8 @@ celerybeat.pid
 # 404'd on /reveal-js/dist/*. Keep these tracked.
 !www/themes/reveal-hugo/static/reveal-js/dist/
 !www/themes/reveal-hugo/assets/reveal-js/dist/
+
+# Private notes in the slides folder: ignore files starting with "." or "__".
+# Single-underscore files such as Hugo's _index.md stay tracked.
+www/content/slides/**/.*
+www/content/slides/**/__*
