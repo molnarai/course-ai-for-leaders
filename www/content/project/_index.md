@@ -1,18 +1,18 @@
 ---
 title: Project
-description: "The semester project is to design and build a Study Buddy: an agentic AI learning partner that helps you prepare for class, test your understanding, apply course ideas to your own work, and improve over time. You build it in your own n8n environment using LLMs, web search, document storage, and a vector database, and you develop it across four reviews that carry increasing weight toward your project grade. The project rewards the quality of your learning design, the clarity of your workflow architecture, the strength of your prompts, and the evidence that you tested and improved the system, more than it rewards decorative complexity."
+description: "The semester project is to shape a Study Buddy: an agentic AI learning partner that helps you prepare for class, test your understanding, apply course ideas to your own work, and improve over time. You work in your own n8n environment, focusing on a single workflow: either one of the provided starter projects (Socratic tutor, quiz preparation, document Q&A, document organization, role play with evaluation) that you adapt, or a workflow you build yourself. The project rewards the quality of your learning design, the strength of your prompts, and the evidence that you tested and improved the system and can show how it supports learning, more than it rewards decorative complexity."
 layout: "project"
 ---
 <!-- **[Guidelines for Final Project Presentation](project-final-presentation/)** -->
 
 <!-- **Project Assignment: Building an AI-Powered Business Solution** -->
 ### Purpose
-The semester project is to design and build a [**Study Buddy**](../blog/study-buddy/), an agentic AI learning partner that helps you prepare for class, test understanding, apply course ideas, and improve over time. The goal is not to build a chatbot that gives polished answers on demand. The goal is to build an AI system that helps you think better, diagnose better, and participate better in class.
+The semester project is to design and shape a [**Study Buddy**](../blog/study-buddy/), an agentic AI learning partner that helps you prepare for class, test understanding, apply course ideas, and improve over time. The goal is not to build a chatbot that gives polished answers on demand. The goal is to build an AI system that helps you think better, diagnose better, and participate better in class.
 
 The strongest Study Buddy will act like a persistent coach. It should ask good questions, challenge weak reasoning, help you connect ideas across readings and courses, and adapt to your recurring strengths and weaknesses.
 
 ### Project Context
-You will build your own version of Study Buddy inside your personal n8n environment. You may work in teams to explore ideas, test approaches, and share design patterns, but **you must build, document, evaluate, and demonstrate your own agents and workflows**.
+You will develop your own version of Study Buddy inside your personal n8n environment. You may work in teams to explore ideas, test approaches, and share design patterns, but **you must configure, document, evaluate, and demonstrate your own version**.
 
 You are provided with:
 - n8n for workflow and agent orchestration.
@@ -20,7 +20,25 @@ You are provided with:
 - SearXNG for internet search.
 - CubeFS for document storage and file access through a provided file-management tool.
 - PostgreSQL with pgvector for structured storage, memory, and retrieval-augmented generation.
-- Starter examples for a simple AI agent, a document-processing pipeline, and a chat-evaluation pipeline.
+- Working starter projects that run out of the box:
+  - **Socratic Tutor**, which asks before it explains.
+  - **Quiz Preparation**, which generates and scores practice questions.
+  - **Document Q&A**, for asking questions about your course and personal documents.
+  - **Document Organization**, for ingesting, tagging, and organizing materials.
+  - **Role Play with Evaluation**, which runs a scenario and then evaluates your performance.
+
+### Two Ways to Succeed
+You can reach an excellent grade on either path. Either way, the project centers on **a single workflow** done well. Building your own is encouraged, but it is not required.
+
+**Path 1: Adapt the starter projects.** Pick one of the starter projects and make it work for a real learning goal in this course or another course you are taking. Most of your work goes into:
+- **Content:** writing scenarios, cases, role-play setups, quiz topics, and supplemental documents that the workflow uses.
+- **Behavior:** rewriting the system prompts so the starter coaches, challenges, and evaluates the way you want it to.
+- **Testing:** running the workflow on realistic study tasks, recording what worked and what didn't, and revising.
+- **Examples:** keeping before-and-after conversations that show how your changes improved the learning experience.
+
+**Path 2: Build your own.** Extend a starter with new nodes, branches, or tools, or build a new workflow, using the design versions and workflow patterns described below.
+
+On either path, the central question is the same: **can you demonstrate how the workflow is used for learning?**
 
 ### Design Principle
 The governing principle for this project is:
@@ -35,12 +53,12 @@ At minimum, your Study Buddy should support a simple chat-centered learning expe
 - My Materials.
 - My Profile or Memory.
 
-The user experience should be simple. You should not need to manually manage a technical database or tune a retrieval system by hand. Your design should keep the interface lightweight while hiding the complexity behind well-designed workflows.
+The user experience should be simple. You should not need to manually manage a technical database or tune a retrieval system by hand. Your design should keep the interface lightweight while hiding the complexity inside a well-designed workflow.
 
-### Required Learning Behaviors
-Your Study Buddy should demonstrate several high-value learning behaviors. Your implementation does not need to use these exact labels in the interface, but the behaviors should be clearly present.
+### Learning Behaviors to Target
+Your Study Buddy should clearly demonstrate a few high-value learning behaviors. You do not need all of them, and you do not need these exact labels in the interface. Two or three behaviors done well are better than six done thinly. Each starter project already covers one or more of them.
 
-Required behaviors include:
+Behaviors to choose from:
 - **Preparation coaching:** Help you get ready for class through questions, checks, and targeted practice rather than immediate summary.
 - **Concept mastery checking:** Diagnose what you actually understand and where you are weak.
 - **Application practice:** Generate cases, scenarios, managerial situations, or decision contexts that require use of course concepts.
@@ -59,34 +77,34 @@ A strong Study Buddy should be able to support interactions such as:
 - “Use my own work experience to interpret this topic.”
 - “Give me an integrative problem that uses several topics at once.”
 
-### Functional Requirements
-Your final project must include multiple working workflows or agents. At minimum, your solution should include:
+### What Your Project Should Include
+A successful project, on either path, includes:
 
-1. **A conversational Study Buddy workflow** that manages dialogue and chooses an appropriate coaching behavior.
-2. **A materials-ingestion workflow** that accepts and processes course resources such as syllabi, readings, notes, transcripts, or cases.
-3. **A retrieval or memory workflow** using Postgres/pgvector, structured memory, or an equivalent design that supports persistence and personalization.
-4. **An evaluation workflow** that tests or reviews agent responses, conversation quality, or learning behavior.
-5. **At least one advanced workflow** beyond the starter examples, such as synthesis generation, challenge-mode branching, class-prep coaching, scenario generation, weakness tracking, or evidence-based feedback.
+1. **One learning workflow you have made your own**, either a starter you have adapted or a workflow you built, used for a real study task.
+2. **Course or supplemental materials** that the workflow uses: readings, cases, scenarios, role-play setups, quiz topics, or your own notes.
+3. **Some form of evaluation**, whether the built-in evaluation of the Role Play starter, an evaluation step in your workflow, or a structured review of conversations against criteria you define.
+
+Persistent memory, retrieval across many documents, or routing between study modes are welcome and will be credited when they strengthen your workflow, but they are not required. Focus on one workflow rather than spreading your effort across several.
 
 ### Technical Expectations
-You will not build these workflows from scratch. We will provide **working n8n templates** for the core workflows. Each template runs out of the box with default behavior.
+You do not need to build a workflow from scratch. The starter projects are **working n8n templates** that run out of the box with default behavior.
 
-Your job is to make them your own:
-- **Required: customize behavior through system prompts.** Rewrite the system prompts to define your Study Buddy's role, coaching style, tone, and how it uses course materials and memory. This is where most of your design work will show.
-- **Optional: change the workflow structure.** If you are comfortable, you can also add, remove, or rewire nodes. For example, you might add a branching step, a new tool, or an extra workflow. This is not required, but it is a way to go further.
+Your job is to pick one and make it your own:
+- **Required: customize behavior through system prompts.** Rewrite the system prompts to define your Study Buddy's role, coaching style, tone, and how it uses your materials. This is where most of your design work will show.
+- **Required: supply the content.** Create the scenarios, cases, quiz topics, or supplemental documents that make the workflow useful for a specific learning goal.
+- **Optional: change the workflow structure.** If you are comfortable, you can also add, remove, or rewire nodes. For example, you might add a branching step or a new tool. This is not required, but it is a way to go further.
 
 Your final project should show:
-- Clear, deliberate system prompts for each workflow you use.
-- Course materials loaded and retrieved in a way that supports your design.
-- Memory that carries over between conversations.
-- Each workflow playing a clear role in the overall system.
-- Evidence that you tested your Study Buddy and improved it based on what you saw.
+- Clear, deliberate system prompts for your workflow.
+- Materials and scenarios prepared in a way that supports your learning goal.
+- Test conversations and examples, with evidence that you improved the behavior based on what you saw.
+- A clear demonstration of how the workflow is used for learning.
 
 ---
 
 ## Choosing Your Design
 
-There is no single correct Study Buddy. The sections below describe viable versions of the project and the dimensions along which they differ. Use them to choose a scope you can actually finish and demonstrate well.
+There is no single correct Study Buddy. The sections below describe viable versions of the project and the dimensions along which they differ. Use them to choose a scope you can actually finish and demonstrate well. If you are on Path 1, the starter projects already sit at the lower-complexity end of most dimensions. That is a perfectly good place to be. Whichever version you choose, realize it as a single workflow.
 
 ### Design Dimensions
 Your version can sit anywhere along these dimensions. You do not need to be at the high-complexity end of every row.
@@ -191,7 +209,7 @@ Possible agent/workflow roles:
 - Critic/evaluator.
 - Learner-model updater.
 
-Best use: demonstrates orchestration and workflow design maturity. Attempt this only if you are confident you can keep it reliable.
+Best use: demonstrates orchestration and workflow design maturity. This goes beyond the single-workflow scope of the project; attempt it only if you are confident you can keep it reliable.
 
 </details>
 
@@ -199,7 +217,7 @@ Best use: demonstrates orchestration and workflow design maturity. Attempt this 
 
 ## Workflow Patterns You Can Build
 
-You already receive a simple agent, a document pipeline, and a chat evaluation pipeline. The patterns below go beyond that plumbing and emphasize learning design. Pick the ones that fit your chosen version.
+The starter projects already implement several of these patterns. The list below is for students on Path 2, or anyone who wants to go further. Each pattern can be the focus of your single workflow; pick the one that fits your chosen version.
 
 1. **Intent Router for Study Modes** — Detects whether you want preparation, quiz, challenge, synthesis, application, or reflection, and routes to different prompt templates and downstream workflows.
 2. **Socratic Response Workflow** — Takes your question and responds with diagnostic or probing questions first, delaying direct explanation until you have shown sufficient effort.
@@ -210,7 +228,7 @@ You already receive a simple agent, a document pipeline, and a chat evaluation p
 7. **Challenge / Devil's Advocate Workflow** — Takes your interpretation and systematically tests alternative explanations or counterarguments.
 8. **Evidence Checker** — Reviews an agent response or a claim and verifies whether it is grounded in retrieved materials, memory, or external search. Helps discourage hallucinated confidence.
 9. **Reflection Workflow** — At the end of a session, prompts you to reflect on what changed in your understanding, and saves a concise reflection plus next-step recommendations.
-10. **Demonstration Capture Workflow** — Creates a structured transcript, summary, or scorecard from a demo session. Useful for milestone reviews.
+10. **Demonstration Capture Workflow** — Creates a structured transcript, summary, or scorecard from a demo session. Useful for documenting your demonstration.
 
 ### A Reference Architecture
 A practical pattern that works for many projects:
@@ -224,75 +242,42 @@ A practical pattern that works for many projects:
 - An evaluation or reflection workflow reviews the session and updates the learner profile.
 
 ### A Note on Scope
-Do not push yourself toward unnecessary complexity. A polished, well-tested Socratic coach with persistent memory and three to five strong workflows is better than an unreliable swarm of agents.
+Do not push yourself toward unnecessary complexity. A single well-tuned Socratic Tutor or Role Play, with carefully written scenarios, tested prompts, and convincing examples, is better than an unreliable swarm of agents.
 
-**Prefer fewer workflows with strong learning behaviors over many weak features.**
-
-At minimum, your final system should include:
-- Three to five meaningful workflows.
-- One document/materials workflow.
-- One conversation workflow.
-- One evaluation or critique workflow.
-- One personalization, memory, or learner-model feature.
-- One realistic demonstration with several use cases.
+**Prefer one workflow with strong learning behaviors over many weak features.**
 
 ---
 
 ## Deliverables
-You must submit:
-- A working n8n-based Study Buddy system with multiple workflows.
-- A short architecture overview with workflow descriptions.
-- Prompt designs or system-instruction designs for the major agents/workflows.
-- A description of how course materials, memory, and retrieval are handled.
-- An evaluation plan with examples of tests or review criteria.
-- A demonstration showing how the system is used in realistic study situations.
-- A brief reflection describing what improved over time and what still remains limited.
+You feature **one workflow** (which may be built from several connected workflows) and submit three deliverables:
 
----
-
-## Milestones and Reviews
-
-The project runs across four reviews. Each review contributes to your project grade, so early progress and responsiveness to feedback matter, while the final system still carries the most weight.
-
-Each milestone page below states what to deliver, what to show at the review, and the criteria that review is graded on. Target dates and grade weights are in the milestone table at the bottom of this page.
-
-### Capability Checklist
-Use this table to judge whether you are on track at each review.
-
-<details>
-<summary><strong>Show the capability checklist</strong></summary>
-
-| Capability | M01 | M02 | M03 | M04 |
-|---|---|---|---|---|
-| Problem framing and architecture | Expected | Refined | Stable | Finalized |
-| Chat workflow | Planned | Working | Improved | Polished |
-| Materials ingestion | Planned | Working | Improved | Polished |
-| Retrieval or memory | Planned | Baseline | Improved | Integrated |
-| Multiple workflows | Proposed | At least 2 | At least 3 to 4 | Coherent portfolio |
-| Learning behaviors | Proposed | At least 1 strong behavior | Several behaviors | Integrated and adaptive |
-| Evaluation workflow | Planned | Baseline | Working and informative | Used in final analysis |
-| Demonstration quality | Outline | Early demo | Stronger demo | Final polished demo |
-| Iteration evidence | Plan | Initial revisions | Clear improvement | Strong reflective analysis |
-
-</details>
+1. **Report (1–3 pages), submitted on iCollege.** A short document about your featured workflow that covers:
+   - **Intent:** the learning goal and how the workflow is meant to help teaching and learning.
+   - **How it works:** how the workflow, or the set of workflows, operates.
+   - **Your contribution:** what you built, changed, or tuned yourself (for example, system prompts and the reasons for your changes).
+   - **List of materials:** every artifact you created for the project, such as prompts, scenarios, cases, quiz topics, and supplemental documents.
+   - **Playbook:** step-by-step instructions for running it.
+   - **Example runs:** sample dialogs or screenshots from realistic study situations.
+   - **Summary and outlook:** what worked, what is still limited, and how you envision using and enhancing the project.
+2. **Video (5–10 minutes), uploaded to iCollege.** Briefly introduce how your solution is built, then demonstrate how it works. You can use screen recordings, PowerPoint slides, or both.
+3. **Workflows on your Study Buddy system, synced to GitLab.** Keep your workflows on your Study Buddy system and sync them to GitLab with the **Submit for review** button on the *n8n* panel.
 
 ---
 
 ## Grading
 
-Your project is evaluated on how well your Study Buddy supports learning, how thoughtfully your workflows are designed, and how clearly you demonstrate and improve the system over time. Prompt quality, ingenuity, evaluation, and realistic demonstration count for more than decorative complexity. Bells and whistles count, but they do not dominate.
+Your project is evaluated on how well your Study Buddy supports learning, how thoughtfully your workflow is designed, and how clearly you demonstrate its use for learning. Prompt quality, ingenuity, well-prepared materials, and realistic demonstration count for more than decorative complexity. Bells and whistles count, but they do not dominate. Projects that adapt the starters are graded on the same rubric: for workflow architecture, what counts is how well you chose and configured the workflow for your learning goal, not how many nodes you built.
 
 ### Grading Categories
 The rubric uses 100 points total.
 
 | Category | Weight | What is being judged |
 |---|---:|---|
-| Learning design and pedagogy | 25 | Does the system help you think, diagnose, apply, and improve rather than just answer? |
-| Workflow architecture and implementation | 20 | Are there multiple coherent workflows or agents with clear responsibilities and reliable behavior? |
-| Prompt quality and orchestration | 15 | Are prompts well designed, purposeful, and adapted to task or mode? |
-| Retrieval, memory, and data use | 10 | Does the project use materials, memory, retrieval, or structured context effectively? |
-| Evaluation and iterative improvement | 15 | Is there evidence of testing, critique, analysis, and revision over time? |
-| Demonstration and use cases | 10 | Do you convincingly show realistic use and explain the value? |
+| Learning design and pedagogy | 30 | Does the system help you think, diagnose, apply, and improve rather than just answer? |
+| Workflow architecture and implementation | 10 | Is the workflow well chosen for your goal, well configured, and reliable? |
+| Prompt quality and orchestration | 20 | Are prompts well designed, purposeful, and adapted to task or mode? |
+| Materials and data use | 15 | Do the materials, scenarios, and supplemental documents you prepared (and any retrieval or memory) support the learning goal? |
+| Demonstration and use cases | 20 | Do you convincingly show realistic use and explain the value? |
 | Polish and advanced features | 5 | Are there useful refinements, interface quality, or technically interesting extensions? |
 
 ### Detailed Rubric
@@ -302,28 +287,17 @@ The rubric uses 100 points total.
 
 | Category | Excellent | Good | Developing | Weak |
 |---|---|---|---|---|
-| Learning design and pedagogy (25) | System consistently coaches, challenges, and adapts; clearly improves your thinking | Often supports learning well, though some behaviors are uneven | Shows some coaching behavior but often falls back to direct answering | Mostly a generic chatbot with little learning design |
-| Workflow architecture and implementation (20) | Multiple workflows are distinct, integrated, and reliable | Several workflows work well with minor gaps | Some workflows exist but integration is weak or fragile | Minimal workflow design; mostly one path or unreliable automation |
-| Prompt quality and orchestration (15) | Prompts are precise, mode-aware, and pedagogically strong | Prompts are mostly good with some generic sections | Prompts work but are shallow or inconsistent | Prompting is weak, generic, or poorly matched to goals |
-| Retrieval, memory, and data use (10) | Materials, retrieval, and persistence are used thoughtfully and effectively | Good baseline use of retrieval or memory | Basic retrieval or context use but limited adaptation | Little meaningful use of data, retrieval, or memory |
-| Evaluation and iterative improvement (15) | Strong evidence of testing, critique, analysis, and a clear improvement cycle | Good testing and revision with some analysis | Some testing is present but shallow or incomplete | Little evidence of evaluation or improvement |
-| Demonstration and use cases (10) | Demo is realistic, persuasive, and clearly tied to study value | Demo shows clear use and reasonable range | Demo works but is narrow or not fully convincing | Demo is weak, unclear, or disconnected from use case |
+| Learning design and pedagogy (30) | System consistently coaches, challenges, and adapts; clearly improves your thinking | Often supports learning well, though some behaviors are uneven | Shows some coaching behavior but often falls back to direct answering | Mostly a generic chatbot with little learning design |
+| Workflow architecture and implementation (10) | Workflow is well chosen for the goal, carefully configured, and reliable | Workflow works well with minor gaps | Workflow runs but is only lightly adapted or somewhat fragile | Starter used unchanged, or automation is unreliable |
+| Prompt quality and orchestration (20) | Prompts are precise, mode-aware, and pedagogically strong | Prompts are mostly good with some generic sections | Prompts work but are shallow or inconsistent | Prompting is weak, generic, or poorly matched to goals |
+| Materials and data use (15) | Scenarios, documents, and any retrieval or memory are prepared thoughtfully and clearly serve the goal | Good, relevant materials with some gaps | Materials are generic or only loosely tied to the goal | Little meaningful use of materials or data |
+| Demonstration and use cases (20) | Demo is realistic, persuasive, and clearly tied to study value | Demo shows clear use and reasonable range | Demo works but is narrow or not fully convincing | Demo is weak, unclear, or disconnected from use case |
 | Polish and advanced features (5) | Refinements are useful and well executed | Some valuable extensions or polish | Limited polish or minor extras | Little polish or poorly chosen extras |
 
 </details>
 
-### Feedback You Will Receive
-The criteria for each individual review are on that milestone's page. Every review then uses the same set of questions, so you can anticipate them and address them in advance:
-
-- What is already strong?
-- What learning behaviors are present or missing?
-- Where does the system still do too much for the student?
-- How strong are the prompts and workflow decomposition?
-- How well do retrieval, memory, and data handling support the learning goal?
-- What should be improved before the next milestone?
-
 ### Teaming
-You may work in teams for ideation, testing, peer critique, and shared infrastructure patterns. Grading still preserves individual accountability: **you submit your own workflows, prompts, evaluations, and demo.**
+You may work in teams for ideation, testing, peer critique, and shared infrastructure patterns. Grading still preserves individual accountability: **you submit your own workflow, prompts, evaluations, and demo.**
 
 ---
 
@@ -331,16 +305,17 @@ You may work in teams for ideation, testing, peer critique, and shared infrastru
 The project rewards quality of learning design more than flashy features. Strong projects will show:
 - High-quality prompts and interaction design.
 - Ingenuity in how the agent guides learning.
-- Thoughtful workflow decomposition.
+- Thoughtful choice and configuration of your workflow.
+- Well-crafted scenarios and supporting materials.
 - Evidence that the system helps you think rather than merely receive answers.
 - Clear demonstrations of use.
 - Iterative refinement based on testing and feedback.
 
 ## What a Strong Final Project Looks Like
 A strong final submission will:
-- Feel like a coherent learning system rather than a pile of disconnected automations.
-- Demonstrate several excellent learning behaviors behind a simple interface.
-- Show persistence across time through memory, personalization, or weakness tracking.
-- Include multiple functional workflows that work together reliably.
-- Show prompt quality, testing discipline, and good judgment about when to challenge, retrieve, quiz, or synthesize.
-- Include realistic demonstrations using actual course-related materials and scenarios.
+- Feel like a focused learning tool with a clear purpose rather than a generic chatbot.
+- Demonstrate a few excellent learning behaviors behind a simple interface.
+- Use scenarios, cases, or documents you prepared that make the workflow genuinely useful for a specific course or goal.
+- Show prompt quality, testing discipline, and before-and-after examples of improved behavior.
+- Include realistic demonstrations that show how the workflow is used for learning.
+- Optionally, add persistence, routing, or extra tools within the workflow where they clearly add value.
