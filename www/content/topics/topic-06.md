@@ -25,4 +25,4 @@ This session covers leadership strategies for promoting generative AI adoption w
 ## Deliverables
 
 - **Team presentation** (group, PPTX or PDF, in class): Leading Generative AI Transformation in Organizations. Submit via iCollege.
-- **AI System Project: deployment on server** (individual), due November 7, 2026.
+- **AI System Project: deployment on server** (individual), due November 14, 2026.

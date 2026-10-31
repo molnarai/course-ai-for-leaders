@@ -12,19 +12,18 @@ This session addresses the critical aspects of risk management and ethics in gen
 
 | Time | Activity |
 |---|---|
-| 9:00–9:30 AM | Quiz 2 |
-| 9:30–10:30 AM | Lecture |
-| 10:30–11:00 AM | Discussion |
-| 11:00 AM–12:00 PM | Team Activity |
-| 12:00–1:00 PM | Presentations & Conclusion |
+| 9:00–9:30 AM | Study Buddy |
+| 9:30–11:00 AM | Lecture & Discussion |
+| 11:00 AM–12:30 PM | Team Activity |
+| 12:30–1:00 PM | Quiz 2  |
 
 ## Quiz
 
-- **Quiz 2** (in class, on paper, closed book): Operationalizing Generative AI – Integration and Customization.
+- **Quiz 2** (in class, on paper, closed book): Reflection on Team Activity.
 
 ## Deliverables
 
-- **Team presentation** (group, PPTX or PDF, in class): Risk Management and Ethical Considerations in Generative AI. Submit via iCollege.
+- **Responsible AI Charter** (group, in class): Submit via iCollege.
 
 ## Upcoming
 
