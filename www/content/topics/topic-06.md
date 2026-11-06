@@ -15,8 +15,8 @@ This session covers leadership strategies for promoting generative AI adoption w
 
 | Time | Activity |
 |---|---|
-| 9:00–9:30 AM | Quiz 3 |
-| 9:30–11:00 AM | Lecture & Discussion |
+| 9:00–10:15 AM | Lecture & Discussion |
+| 10:15–10:45 AM | Quiz 3 |
 | 11:00 AM–1:00 PM | Study Buddy Presentations & Next Steps |
 
 ## Quiz
