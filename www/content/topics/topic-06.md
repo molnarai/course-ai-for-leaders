@@ -8,6 +8,9 @@ numsession: 6
 ---
 This session covers leadership strategies for promoting generative AI adoption within organizations, focusing on effective approaches to drive AI initiatives across teams and departments. It emphasizes the importance of building cross-functional teams to support AI projects and details change management techniques to secure organizational buy-in, ensuring a smooth transition and widespread support for generative AI transformation efforts.
 
+## Presentations
+- [Leading AI Transformation](../../slides/slide-60-leading-transformation/)
+
 ## Agenda
 
 | Time | Activity |
