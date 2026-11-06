@@ -4,7 +4,7 @@ description = "Agents in ten slides, then six agentic business solutions read th
 weight = 35
 outputs = ["Reveal"]
 math = true
-thumbnail = "/imgs/slides/agentic-ai-enterprise-workflows.png"
+thumbnail = "/imgs/slides/agentic-ai-enterprise-workflows_1280.jpg"
 
 [reveal_hugo]
 custom_theme = "css/reveal-robinson.css"

@@ -4,7 +4,7 @@ description = "From promising prototypes to governed business capabilities — u
 weight = 37
 outputs = ["Reveal"]
 math = true
-thumbnail = "/imgs/slides/operationalization.jpeg"
+thumbnail = "/imgs/slides/operationalization_1280.jpg"
 
 [reveal_hugo]
 custom_theme = "css/reveal-robinson.css"
